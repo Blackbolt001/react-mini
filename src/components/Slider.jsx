@@ -1,15 +1,17 @@
-import { ArrowLeftOutlined, ArrowRight, } from '@material-ui/icons'
+import { ArrowLeftOutlined, ArrowRight, direction, } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div `
 width:100%;
-height:100vh;
+height:100;
 display:flex;
 position:relative;
 background-color:Bisque;
+overflow:hidden;
 
 `;
+
 const Arrow = styled.div`
     width:50px;
     height:50px;
@@ -26,10 +28,12 @@ const Arrow = styled.div`
    cursor:pointer;
    margin:auto;
    opacity:0.5;
-`
+`;
 
 const Wrapper = styled.div`
     height:100%;
+    display:flex;
+    transform:translateX(-200px);
 `;
 
 const Slide = styled.div`
@@ -75,24 +79,50 @@ const Button = styled.button`
 
 
 const Slider = () => {
+
+
+    const handleClick = (direction) => {
+
+    }
+
   return (
     <Container>
-        <Arrow direction="left">
+        <Arrow direction="left" onClick={ ()=> handleClick("left")}>
             <ArrowLeftOutlined/>
         </Arrow>
         <Wrapper>
-            <Slide>
+           <Slide background-color="f5fafd">
             <ImgContainer>
            <Image src="https://www.pngplay.com/wp-content/uploads/13/Forest-Background-PNG.png"/>
            </ImgContainer>
             <InfoContainer>
                 <Title>Joe's Online Summer Sale</Title>
                 <Desc> Buy Local, Shop Local</Desc>
-                <Button>SHOW Now</Button>
+                <Button>SHOP Now</Button>
             </InfoContainer>
-            </Slide>
+            </Slide> 
+            <Slide background-color="fcf1ed">
+            <ImgContainer>
+           <Image src="https://www.pngplay.com/wp-content/uploads/13/Forest-Background-PNG.png"/>
+           </ImgContainer>
+            <InfoContainer>
+                <Title>Winter Sale</Title>
+                <Desc> Buy Local, Shop Local</Desc>
+                <Button>SHOP Now</Button>
+            </InfoContainer>
+            </Slide> 
+            <Slide background-color="fbf0f4">
+            <ImgContainer>
+           <Image src="https://www.pngplay.com/wp-content/uploads/13/Forest-Background-PNG.png"/>
+           </ImgContainer>
+            <InfoContainer>
+                <Title>Selling Fast</Title>
+                <Desc> Buy Local, Shop Local</Desc>
+                <Button>SHOP Now</Button>
+            </InfoContainer>
+            </Slide>               
         </Wrapper>
-        <Arrow direction="right">
+        <Arrow direction="right"  onClick={ ()=> handleClick("right")}>
             <ArrowRight/>
         </Arrow>
         </Container>
