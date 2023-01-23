@@ -1,4 +1,4 @@
-import { ArrowLeftOutlined, ArrowRight, ArrowRightAltOutlined } from '@material-ui/icons'
+import { ArrowLeftOutlined, ArrowRight, } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -7,9 +7,9 @@ width:100%;
 height:100vh;
 display:flex;
 position:relative;
-background-color:coral;
+background-color:Bisque;
 
-`
+`;
 const Arrow = styled.div`
     width:50px;
     height:50px;
@@ -26,7 +26,7 @@ const Arrow = styled.div`
    cursor:pointer;
    margin:auto;
    opacity:0.5;
-`;
+`
 
 const Wrapper = styled.div`
     height:100%;
@@ -40,6 +40,7 @@ const Slide = styled.div`
 `;
 const ImgContainer = styled.div`
     height:100%;
+    width:50%;
     flex:1;
 `;
 const Image = styled.img`
@@ -49,9 +50,25 @@ const InfoContainer = styled.div`
     flex:1;
     padding:50px;
 `;
-const Title = styled.h1``;
-const Description = styled.p``;
-const Button = styled.button``;
+const Title = styled.h1`
+    font-size:70px;
+    color:DarkOrange;
+`
+const Desc = styled.p`
+    margin: 50px 0px;
+    font-size:20px;
+    font-weight:500;
+    letter-spacing: 3px;
+    color:coral;
+`
+const Button = styled.button`
+    padding:10px;
+    font-size:20px;
+    background-color:chocolate;
+    opacity:.8;
+    cursor:pointer;
+   
+`
 
 
 
@@ -66,9 +83,13 @@ const Slider = () => {
         <Wrapper>
             <Slide>
             <ImgContainer>
-           <Image src="https://www.pngplay.com/wp-content/uploads/6/Funny-Donkey-Transparent-PNG.png"/>
+           <Image src="https://www.pngplay.com/wp-content/uploads/13/Forest-Background-PNG.png"/>
            </ImgContainer>
-            <InfoContainer></InfoContainer>
+            <InfoContainer>
+                <Title>Joe's Online Summer Sale</Title>
+                <Desc> Buy Local, Shop Local</Desc>
+                <Button>SHOW Now</Button>
+            </InfoContainer>
             </Slide>
         </Wrapper>
         <Arrow direction="right">
