@@ -14,7 +14,7 @@ font-weight:bold;
 const Announcement = () => {
   return (
     <Container>
-        FREE FREE FREE!!!! buy our SHIT!!! 
+        FREE FREE FREE!!!! 
         </Container>
   )
 }
