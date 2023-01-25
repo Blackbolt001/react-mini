@@ -34,8 +34,10 @@ margin-bottom:20px;
 const Button = styled.button`
 border: none;
 padding:10px;
-background-color:transparent;
+background-color: transparent;
 color: #ee4d02;
+cursor: pointer;
+font-weight: 600;
 `;
 
 const CategoryItem = ({item}) => {

@@ -1,6 +1,6 @@
 
-   import { ArrowLeftOutlined, ArrowRightOutlined, } from '@material-ui/icons';
-   import {React,useState} from 'react';
+   import { ArrowLeftOutlined, ArrowRightOutlined} from '@material-ui/icons';
+   import {useState} from 'react';
    import styled from 'styled-components';
    import { sliderItems } from '../data';
    
@@ -11,8 +11,7 @@
    display:flex;
    position:relative;
    overflow:hidden;
-
-   
+   $(mobile({ display: "none"}))
    `;
    
    const Arrow = styled.div`
@@ -62,14 +61,14 @@
    const Title = styled.h1`
        font-size:70px;
        color:DarkOrange;
-   `
+   `;
    const Desc = styled.p`
        margin: 50px 0px;
        font-size:20px;
        font-weight:500;
        letter-spacing: 3px;
        color:coral;
-   `
+   `;
    const Button = styled.button`
        padding:10px;
        font-size:20px;
@@ -77,12 +76,8 @@
        opacity:.8;
        cursor:pointer;
       
-   `
-   
-   
-   
-   
-   
+   `;
+
    const Slider = () => {
     const [slideIndex, setSlideIndex] = useState(0);
    const handleClick = (direction) => {
@@ -101,7 +96,7 @@
            </Arrow>
            <Wrapper slideIndex={slideIndex}>
             {sliderItems.map((item) => ( 
-              <Slide bg={item.bg}>
+              <Slide bg={item.bg} key={item.id}>
                <ImgContainer>
               <Image src={item.img}/>
               </ImgContainer>
@@ -120,7 +115,7 @@
      )
    };
    
-   export default Slider
+   export default Slider;
    
    
    
