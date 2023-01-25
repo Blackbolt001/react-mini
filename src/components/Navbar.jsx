@@ -1,5 +1,5 @@
-import Badge from '@material-ui/core/Badge/Badge';
 import { Search, ShoppingCartOutlined } from '@material-ui/icons';
+import Badge from '@material-ui/core/Badge/Badge';
 import React from 'react'
 import styled from 'styled-components'
 
@@ -59,7 +59,7 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Language> EN </Language>
+          <Language> ENGlih </Language>
           <SearchContainer>
             <Input/>
             <Search style = {{color:"gray", fontSize:16}}/>
@@ -81,4 +81,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar
