@@ -11,6 +11,7 @@
    display:flex;
    position:relative;
    overflow:hidden;
+
    
    `;
    
@@ -36,6 +37,7 @@
    const Wrapper = styled.div`
        height:100%;
        display:flex;
+       transition: all 1.5s ease;
        transform: translateX(${(props)=>props.slideIndex *-100}vw);
    `;
    
@@ -44,10 +46,10 @@
        height:100vh;
        display:flex;
        align-items:center;
+       background-color: #${(props) => props.bg};
    `;
    const ImgContainer = styled.div`
        height:100%;
-       width:50%;
        flex:1;
    `;
    const Image = styled.img`
@@ -116,7 +118,7 @@
            </Arrow>
            </Container>
      )
-   }
+   };
    
    export default Slider
    
