@@ -1,7 +1,8 @@
 
    import { ArrowLeftOutlined, ArrowRightOutlined, } from '@material-ui/icons';
-   import React from 'react';
+   import {React,useState} from 'react';
    import styled from 'styled-components';
+   import { sliderItems } from '../data';
    
    
    const Container = styled.div `
@@ -9,7 +10,6 @@
    height:100vh;
    display:flex;
    position:relative;
-   background-color:Bisque;
    overflow:hidden;
    
    `;
@@ -25,17 +25,18 @@
        position:absolute;
        top:0;
        bottom:0;
-      left:${props=>props.direction === "left" && "10px"};
-      right:${props=>props.direction === "right" && "10px"};
+      left:${(props)=>props.direction === "left" && "10px"};
+      right:${(props)=>props.direction === "right" && "10px"};
       cursor:pointer;
       margin:auto;
       opacity:0.5;
+      z-index:2;
    `;
    
    const Wrapper = styled.div`
        height:100%;
        display:flex;
-       transform:translateX(-200px);
+       transform: translateX(${(props)=>props.slideIndex *-100}vw);
    `;
    
    const Slide = styled.div`
@@ -81,48 +82,36 @@
    
    
    const Slider = () => {
-   
-   
-       
-   
+    const [slideIndex, setSlideIndex] = useState(0);
+   const handleClick = (direction) => {
+    if(direction==="left"){
+        setSlideIndex(slideIndex > 0 ? slideIndex-1:2)
+    } else {
+        setSlideIndex(slideIndex < 2 ? slideIndex +1:0)
+    }
+   };
+
+
      return (
        <Container>
-           <Arrow direction="left">
+           <Arrow direction="left" onClick={()=>handleClick("left")}>
                <ArrowLeftOutlined/>
            </Arrow>
-           <Wrapper>
-              <Slide background-color="f5fafd">
+           <Wrapper slideIndex={slideIndex}>
+            {sliderItems.map((item) => ( 
+              <Slide bg={item.bg}>
                <ImgContainer>
-              <Image src="https://www.pngplay.com/wp-content/uploads/13/Forest-Background-PNG.png"/>
+              <Image src={item.img}/>
               </ImgContainer>
                <InfoContainer>
-                   <Title>Joe's Online Summer Sale</Title>
-                   <Desc> Buy Local, Shop Local</Desc>
+                   <Title>{item.title}</Title>
+                   <Desc> {item.desc}</Desc>
                    <Button>SHOP Now</Button>
                </InfoContainer>
-               </Slide> 
-               <Slide background-color="fcf1ed">
-               <ImgContainer>
-              <Image src="https://www.pngplay.com/wp-content/uploads/13/Forest-Background-PNG.png"/>
-              </ImgContainer>
-              <InfoContainer>
-                  <Title>Winter Sale</Title>
-                   <Desc> Buy Local, Shop Local</Desc>                
-              <Button>SHOP Now</Button>
-               </InfoContainer>
-               </Slide> 
-               <Slide background-color="fbf0f4">
-               <ImgContainer>
-              <Image src="https://www.pngplay.com/wp-content/uploads/13/Forest-Background-PNG.png"/>
-              </ImgContainer>
-               <InfoContainer>
-                   <Title>Selling Fast</Title>
-                   <Desc> Buy Local, Shop Local</Desc>
-                   <Button>SHOP Now</Button>
-               </InfoContainer>
-               </Slide>               
+               </Slide>    
+            ))}         
            </Wrapper>
-           <Arrow direction="right">
+           <Arrow direction="right" onClick={()=>handleClick("right")}>
                <ArrowRightOutlined/>
            </Arrow>
            </Container>
