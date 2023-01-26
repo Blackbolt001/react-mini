@@ -1,5 +1,4 @@
 import {  FavoriteBorderOutlined,SearchOutlined, ShoppingCartOutlined } from '@material-ui/icons';
-import React from 'react';
 import styled from 'styled-components';
 
 
@@ -15,19 +14,21 @@ z-index: 3;
 display: flex;
 align-items: center;
 justify-content: center;
-transition: all 0.5s ease;
+transition: all 1.5s ease;
 cursor: pointer;
 `;
 
     const Container = styled.div `
     flex: 1;
   margin: 5px;
+  border-radius:20px;
   min-width: 280px;
   height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f5fbfd;
+  background-color: #ca1c6d;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   position: relative;
   &:hover ${Info}{
     opacity: 1;
@@ -37,7 +38,8 @@ cursor: pointer;
       width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-color: white;
+  background-color: #e0ee22;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   position: absolute;
 `;
 
@@ -52,15 +54,17 @@ cursor: pointer;
       width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: white;
+  background-color: #8795e7;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 10px;
-  transition: all 0.5s ease;
-  &:hover {
-    background-color: #e9f5f5;
-    transform: scale(1.1);
+  transition: all 1.0s ease;
+  &:hover{
+    background-color: #f72cb3;
+    transform: scale(1.5);
+    import {} from 'react-scripts';
+
   }
 `;
     

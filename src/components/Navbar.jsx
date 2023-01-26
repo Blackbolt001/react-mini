@@ -11,6 +11,7 @@ const Wrapper = styled.div`
 padding:10px 20px;
 display:flex;
 align-items: center;
+background-color: #f7e8da;
 justify-content: space-between;
 `;
 
@@ -59,7 +60,7 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Language> ENGlih </Language>
+          <Language> English</Language>
           <SearchContainer>
             <Input/>
             <Search style = {{color:"gray", fontSize:16}}/>

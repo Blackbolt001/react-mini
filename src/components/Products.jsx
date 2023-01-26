@@ -5,8 +5,10 @@ import {popularProducts} from '../data';
 const Container = styled.div`
 padding:20px;
 display:flex;
-flex-wrap;
+flex-wrap: wrap;
+background-color: #faf6f1;
 justify-content:space-between;
+
 `;
 
 const Products = () => {

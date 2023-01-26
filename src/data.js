@@ -2,7 +2,7 @@ export const sliderItems = [
     {
       id: 1,
       img: "https://www.pngplay.com/wp-content/uploads/9/MrBeast-Transparent-PNG.png",
-      title: "Secret Deals",
+      title: "Secrets",
       desc: "Secret deals for new customers.",
       bg: "faf6f1",
     },
@@ -26,17 +26,17 @@ export const sliderItems = [
     {
       id: 1,
       img: "https://images.pexels.com/photos/534126/pexels-photo-534126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
-      title: "SHIRT STYLE!",
+      title: "FINDS",
     },
     {
       id: 2,
       img: "https://images.pexels.com/photos/192454/pexels-photo-192454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
-      title: "LOUNGEWEAR",
+      title: "OUTDOORS",
     },
     {
       id: 3,
       img: "https://images.pexels.com/photos/2917276/pexels-photo-2917276.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
-      title: "LIGHT JACKETS",
+      title: "ADVENTURE",
     },
   ];
   export const popularProducts = [
@@ -50,27 +50,27 @@ export const sliderItems = [
     },
     {
       id:3,
-      img:"https://www.google.com/url?sa=i&url=https%3A%2F%2Ftoppng.com%2Fshow_download%2F190447%2Fbook-cover-stock-photography-clip-art-stack-of-books%2Flarge&psig=AOvVaw307XMMk0vapb842JSLZGkg&ust=1674754881044000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCLDf75-i4_wCFQAAAAAdAAAAABAU",
+      img:"https://p.kindpng.com/picc/s/4-46990_colours-splash-png-color-splash-transparent-background-png.png",
     },
     {
       id:4,
-      img:"https://www.burdastyle.com/pub/media/catalog/product/cache/7bd3727382ce0a860b68816435d76e26/107/BUS-PAT-BURTE-1320516/1170x1470_BS_2016_05_132_front.png",
+      img:"https://www.freepnglogos.com/uploads/food-png/download-food-download-png-png-image-pngimg-13.png",
     },
     {
       id:5,
-      img:"https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png",
+      img:"https://cdn.pixabay.com/photo/2017/09/03/00/44/png-2709031__340.png",
     },
     {
       id:6,
-      img:"https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png",
+      img:"https://purepng.com/public/uploads/thumbnail/purepng.com-coconutcoconutcocofooddelicious-331522413416xfhrd.png",
     },
     {
       id:7,
-      img:"https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+      img:"https://media.cheddars.com/en_us/images/marketing/csk-eclub-nachos-with-clickies.png",
     },
     {
       id:8,
-      img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
+      img:"https://thenounproject.com/_next/static/media/free-content-calendar.3405a0f3.png",
     },
   ] 
  
