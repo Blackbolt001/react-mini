@@ -120,15 +120,15 @@ const Footer = () => {
 
         <Title>Contact</Title>
         <ContactItem>
-            <Room/>
+            <Room style={{marginRight:"10px"}}/>
            Covington,Georgia
         </ContactItem>
         <ContactItem>
-            <Phone/>
+            <Phone style={{marginRight:"10px"}}/>
            1-904-210-8619
         </ContactItem>
         <ContactItem>
-            <MailOutline/>
+            <MailOutline style={{marginRight:"10px"}}/>
             JGOSSETT73@GMAL.COM
         </ContactItem>
         <Payment src = "https://i.ibb.co/Qfvn4z6/payment.png"/>
