@@ -38,7 +38,7 @@ cursor: pointer;
       width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-color: #e0ee22;
+  background-color: #d6d8bf;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   position: absolute;
 `;
