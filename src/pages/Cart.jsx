@@ -2,6 +2,7 @@ import styled from "styled-components"
 import Navbar from "../components/Navbar"
 import Announcement from "../components/Announcement"
 import Footer from "../components/Footer"
+import { Add, Remove } from "@material-ui/icons"
 
 
 const Container=styled.div``
@@ -19,6 +20,7 @@ const Top=styled.div`
     display:flex;
     align-items:center;
     justify-content:space-between;
+    padding:20px;
 `;
 
 const TopButton=styled.button`
@@ -54,8 +56,9 @@ const Product=styled.div`
 `;
 
 const ProductDetail=styled.div`
+    display:flex;
     flex:2;
-`
+`;
 
 const Image=styled.img`
     width:200px;
@@ -90,9 +93,63 @@ const PriceDetail=styled.span`
     justify-content:center;
     `;
 
+const ProductAmountContainer=styled.div`
+    display:flex;
+    align-items:center;
+
+`;
+
+const ProductAmount=styled.div`
+    font-size:24px;
+    margin:5px;
+`;
+
+const ProductPrice=styled.span`
+    font-size:30px;
+    font-weight:200;
+
+`;
+
+const Hr=styled.hr`
+    background-color: #eeee;
+    border:none;
+    height:1px;
+`;
+
 const Summary=styled.h1`
     flex:1;
+    border:10.5px solid lightblue;
+    border-radius:5px;
+    padding:20px;
+    height:50vh;
 `;
+
+const SummaryTitle=styled.h1`
+    font-weight:200;
+    color: #e908a5;
+`;
+
+const SummaryItem=styled.div`
+    margin:30px 0px;
+    display:flex;
+    justify-content:space-between;
+    font-weight: ${(props) => props.type === "total" && "500"};
+    font-size: ${(props) => props.type === "total" && "24px"};
+`;
+
+const SummaryItemText=styled.span`
+    font-size:20px;
+    `;
+
+const SummaryItemPrice=styled.span``;
+
+const Button=styled.button`
+    width:100%;
+    padding:10px;
+
+`
+
+
 
 
 const Cart = () => {
@@ -103,17 +160,14 @@ const Cart = () => {
         <Wrapper>
             <Title>Your Items</Title>
             <Top>
-
                 <TopButton>Add More Items</TopButton>
                 <TopTexts>
                     <TopText>Shopping Bag(2)</TopText>
                     <TopText>Your WishList</TopText>
                 </TopTexts>
                 <TopButton type="filled">Checkout</TopButton>
-
             </Top>
             <Bottom>
-
                 <Info>
                     <Product>
                         <ProductDetail>
@@ -121,19 +175,63 @@ const Cart = () => {
                             <Details>
                             <ProductName><b>Product:</b>HARPERS BAZAAR</ProductName>
                             <ProductID><b>ID:</b> <b> 01234567890</b></ProductID>
-                            <ProductColor color="black"/>
+                            <ProductColor color="lavender"/>
                             <ProductSize><b>Size</b><b> 50</b></ProductSize>
                             </Details>
                         </ProductDetail>
                         <ProductDetail>
                             <PriceDetail>
-                                price
+                                <ProductAmountContainer>
+                                    <Add/>
+                                    <ProductAmount>2</ProductAmount>
+                                    <Remove/>
+                                </ProductAmountContainer>
+                                <ProductPrice> 1$</ProductPrice>
                             </PriceDetail>
                         </ProductDetail>
-
+                    </Product>
+                    <Hr/>
+                    <Product>
+                        <ProductDetail>
+                            <Image src="https://purepng.com/public/uploads/large/91508075138vl92dksmyo133nphvsqdldi8erp3b0gogsfbu7ulshuxwmdjycsxfvvs7axzquudulrvetp2idz0mld1ddfsbnult9kczx4njqlp.png"/>
+                            <Details>
+                            <ProductName><b>Product:</b>HARPERS BAZAAR</ProductName>
+                            <ProductID><b>ID:</b> <b> 01234567890</b></ProductID>
+                            <ProductColor color="beige"/>
+                            <ProductSize><b>Size:</b> M
+                            </ProductSize>
+                            </Details>
+                        </ProductDetail>
+                            <PriceDetail>
+                                <ProductAmountContainer>
+                                    <Add/>
+                                    <ProductAmount>1</ProductAmount>
+                                    <Remove/>
+                                </ProductAmountContainer>
+                                <ProductPrice> 100$</ProductPrice>
+                            </PriceDetail>
                     </Product>
                 </Info>
-                <Summary>summary</Summary>
+                <Summary>
+                <SummaryTitle> Order Summary </SummaryTitle>
+                <SummaryItem>
+                    <SummaryItemText> subtotal</SummaryItemText>
+                    <SummaryItemPrice> $ 599</SummaryItemPrice>
+                </SummaryItem>
+                <SummaryItem>
+                    <SummaryItemText> Estimated Shipping</SummaryItemText>
+                    <SummaryItemPrice> $ 4.99</SummaryItemPrice>
+                </SummaryItem>
+                <SummaryItem>
+                    <SummaryItemText> Shipping Discount</SummaryItemText>
+                    <SummaryItemPrice> $ 4.99</SummaryItemPrice>
+                </SummaryItem>
+                <SummaryItem type="total">
+                    <SummaryItemText>Total</SummaryItemText>
+                    <SummaryItemPrice> $ 599</SummaryItemPrice>
+                </SummaryItem>
+                <Button>CheckoutNOW</Button>
+            </Summary>
             </Bottom>
         </Wrapper>
         <Footer/>
