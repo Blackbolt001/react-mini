@@ -1,3 +1,4 @@
+
 export const sliderItems = [
     {
       id: 1,
@@ -50,11 +51,11 @@ export const sliderItems = [
     },
     {
       id:3,
-      img:"https://p.kindpng.com/picc/s/4-46990_colours-splash-png-color-splash-transparent-background-png.png",
+      img:"https://www.pngplay.com/wp-content/uploads/15/Classic-Glasses-Transparent-File.png",
     },
     {
       id:4,
-      img:"https://www.freepnglogos.com/uploads/food-png/download-food-download-png-png-image-pngimg-13.png",
+      img:"https://www.pngplay.com/wp-content/uploads/15/Lego-Tmnt-PNG-Clipart-Background.png",
     },
     {
       id:5,
@@ -62,15 +63,31 @@ export const sliderItems = [
     },
     {
       id:6,
-      img:"https://purepng.com/public/uploads/thumbnail/purepng.com-coconutcoconutcocofooddelicious-331522413416xfhrd.png",
+      img:"https://www.pngplay.com/wp-content/uploads/15/Cute-Teddy-Bear-Free-PNG.png",
     },
     {
       id:7,
-      img:"https://media.cheddars.com/en_us/images/marketing/csk-eclub-nachos-with-clickies.png",
+      img:"https://www.pngplay.com/wp-content/uploads/15/Dress-Black-PNG-Images-HD.png",
     },
     {
       id:8,
-      img:"https://thenounproject.com/_next/static/media/free-content-calendar.3405a0f3.png",
+      img:"https://www.pngplay.com/wp-content/uploads/13/Robot-Dog-PNG-Clipart-Background.png",
     },
+    {
+      id:9,
+      img:"https://www.pngplay.com/wp-content/uploads/15/iPhone-14-Transparent-PNG.png",
+    },
+    {
+      id:10,
+      img:"https://www.pngplay.com/wp-content/uploads/15/Machines-Transparent-Image.png",
+  },
+  {
+    id:11,
+    img:"https://www.pngplay.com/wp-content/uploads/15/Goggles-PNG-Images-HD.png",
+},
+{
+  id:12,
+  img:"https://www.pngplay.com/wp-content/uploads/2/White-Eggs-Transparent-File.png",
+}
   ] 
  
