@@ -1,5 +1,6 @@
 import { Send } from '@material-ui/icons';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import {mobile} from "../responsive";
 
 const Container = styled.div`
     height: 60vh;
@@ -7,7 +8,9 @@ const Container = styled.div`
     display: flex;
     flex-direction:column;
     align-items:center;
+    justify-content:center;
     `;
+
 const Title = styled.h1`
     font-size:70px;
     margin-bottom:20px;
@@ -25,6 +28,7 @@ const Desc = styled.div`
     font-size:24px;
     margin-bottom:20px;
     font-weight:300;
+    ${mobile({ textAlign: "center" })}
 `;
 
 const InputContainer = styled.div`
@@ -35,6 +39,7 @@ const InputContainer = styled.div`
     border-radius:15px;
     justify-content: space-between;
     border: 1px solid lightgray;
+    ${mobile({ width: "80%" })}
 `;
 
 const Input = styled.input`
@@ -51,6 +56,7 @@ const Input = styled.input`
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   transform:scale(1.2);
   transition: all .5s ease;
+  }
 `;
 
 const Button = styled.button`
@@ -66,14 +72,15 @@ const Button = styled.button`
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   transform:scale(1);
   transition: all .5s ease;
+    }
 
 `;
 
 const Newsletter = () => {
   return (
     <Container>
-        <Title>NEWSLETTER</Title>
-        <Desc>FIND OUT WHAT YOUR LOCAL BUSINESS IS DOING FOR YOU</Desc>
+        <Title>NEWS</Title>
+        <Desc>FIND OUT WHAT YOUR LOCAL WEB DEVELOPER IS DOING FOR YOU</Desc>
         <InputContainer> 
         <Input placeholder='Your email'/>
         <Button>
@@ -81,7 +88,7 @@ const Newsletter = () => {
         </Button>
         </InputContainer>
     </Container>
-  )
-}
+  );
+};
 
-export default Newsletter
+export default Newsletter;

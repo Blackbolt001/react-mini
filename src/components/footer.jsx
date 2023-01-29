@@ -1,9 +1,11 @@
 import { Facebook, GitHub, Instagram, MailOutline, Phone, Room, Twitter } from '@material-ui/icons';
-import React from 'react'
 import styled from 'styled-components'
+import {mobile} from "../responsive";
+
 
 const Container= styled.div`
     display:flex;
+    ${mobile({ flexDirection: "column" })}
 `;
 const Left = styled.div`
     flex:1;
@@ -31,12 +33,13 @@ const SocialIcon = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
-    margin:5px;
+    margin-right:20px;
 `;
 
 const Center = styled.div`
   flex:1;
   padding:20px;
+  ${mobile({ display: "none" })}
 `;
 
 const Title= styled.h3`
@@ -61,6 +64,7 @@ const ListItem=styled.li`
 const Right = styled.div`
   flex:1;
   padding:20px;
+  ${mobile({ backgroundColor: "#fff8f8" })}
 `;
 
 const ContactItem = styled.div`
@@ -77,31 +81,30 @@ const Footer = () => {
   return (
     <Container>
         <Left>
-        <Logo>GOOSE</Logo>
+        <Logo>BlackBolt</Logo>
         <Desc>
-            this is a mock up for an online E-Commerce full Stack Web Site.
+            this is functional working web page.
         </Desc>
         <SocialContainer>
-                <SocialIcon color='3b5999'>
+                <SocialIcon color=' #3b5999'>
                     <Facebook/>
                 </SocialIcon>
 
-                <SocialIcon color='E4405F'>
+                <SocialIcon color=' #E4405F'>
                     <Instagram/>
                 </SocialIcon>
 
-                <SocialIcon color='55A4EE'>
+                <SocialIcon color=' #55A4EE'>
                     <Twitter/>
                 </SocialIcon>
 
-                <SocialIcon color='E60023'>
+                <SocialIcon color=' #0f0f0f'>
                     <GitHub/>
                 </SocialIcon>        
         </SocialContainer>
         </Left>
-
         <Center>
-            <Title>LINKS</Title>
+            <Title>Links</Title>
             <List>
                 <ListItem>HOME</ListItem>
                 <ListItem>CART</ListItem>
@@ -114,10 +117,8 @@ const Footer = () => {
                 <ListItem>Wishlist</ListItem>
                 <ListItem>Terms</ListItem>
             </List>
-
         </Center>
         <Right>
-
         <Title>Contact</Title>
         <ContactItem>
             <Room style={{marginRight:"10px"}}/>
@@ -134,7 +135,7 @@ const Footer = () => {
         <Payment src = "https://i.ibb.co/Qfvn4z6/payment.png"/>
         </Right>
     </Container>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

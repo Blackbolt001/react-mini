@@ -3,8 +3,7 @@
    import {useState} from 'react';
    import styled from 'styled-components';
    import { sliderItems } from '../data';
-   import {mobile} from "../responsive";
-   
+   import { mobile } from '../responsive';
    
    const Container = styled.div `
         width:100%;
@@ -12,7 +11,7 @@
         display:flex;
         position:relative;
         overflow:hidden;
-        $(mobile({ display: "none"}))
+        ${mobile({ display: "none"})}
    `;
    
    const Arrow = styled.div`
@@ -34,13 +33,11 @@
       margin:auto;
       opacity:0.5;
       z-index:2;
-      cursor:pointer;
         &:hover{
         background-color: #f5ca79f4;
         border-color: #3a1616;
         transition: all 1.0s ease;
-        transform:scale(1.5);}
-      
+        transform:scale(1.5)}; 
    `;
    
    const Wrapper = styled.div`
@@ -62,7 +59,7 @@
        flex:1;
    `;
    const Image = styled.img`
-       height:70%;
+       height:80%;
    `;
    const InfoContainer = styled.div`
        flex:1;
@@ -92,23 +89,22 @@
        border-radius:25px;
        font-size:20px;
        background-color:transparent;
-       opacity:.8;
        cursor:pointer;
         &:hover{
         background-color: #79f5a9f4;
         border-color: #3a1616;
         color: black;
         transition: all 1.0s ease;
-        transform:scale(1.5);}
+        transform:scale(1.5)};
    `;
 
    const Slider = () => {
     const [slideIndex, setSlideIndex] = useState(0);
    const handleClick = (direction) => {
     if(direction==="left"){
-        setSlideIndex(slideIndex > 0 ? slideIndex-1:2)
+        setSlideIndex(slideIndex > 0 ? slideIndex-1:2);
     } else {
-        setSlideIndex(slideIndex < 2 ? slideIndex +1:0)
+        setSlideIndex(slideIndex < 2 ? slideIndex +1:0);
     }
    };
 

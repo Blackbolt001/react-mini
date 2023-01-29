@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 
 const Container = styled.div`
@@ -7,20 +8,16 @@ margin:3px;
 height:50vh;
 position: relative;
 border-radius:25px;
-justify-content: space-between;
-display:flex;
-flex-wrap:wrap;
 `;
 
 const Image = styled.img`
   width:100%;
-  height:80%;
-  padding:3px;
-  border-color: transparent;
-  border-style:solid;
+  height:100%;
   object-fit: cover;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   border-radius:20px;
+  ${mobile({ height: "20vh" })}
+
   
 `;
 const Info = styled.div`
@@ -37,11 +34,10 @@ justify-content: center;
 `;
 
 const Title = styled.h1`
-color: #93d5e9ee;
-margin-bottom:20px;
+color: #c54bebed;
 border-radius:20px;
 font-weight:600;
-font-size:70px;
+font-size:50px;
 opacity:.8;
 &:hover{ 
   color: #1d07df;
@@ -79,7 +75,7 @@ const CategoryItem = ({item}) => {
         <Button>Start your Adventure Here</Button>
         </Info>
     </Container>
-  )
-}
+  );
+};
 
-export default CategoryItem
+export default CategoryItem;
