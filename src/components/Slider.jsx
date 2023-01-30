@@ -68,32 +68,27 @@
    const Title = styled.h1`
         opacity:.5;
        font-size:70px;
-       color: DarkOrange;
-       &: hover{
-        transition: all 1.0s ease;
-        cursor:pointer;
-        transform:scale(1.5);
-        color: #df14b3;
-       }
+       font-weight:600;
+       color: #4f31f7;
    `;
    const Desc = styled.p`
        margin: 50px 0px;
        font-size:20px;
-       font-weight:500;
+       font-weight:600;
        letter-spacing: 3px;
-       color: #f75308;
+       color: #4f31f7;
    `;
 
    const Button = styled.button`
        padding:10px;
        border-radius:25px;
        font-size:20px;
-       background-color:transparent;
+       background-color: #a0e5dc;
        cursor:pointer;
         &:hover{
-        background-color: #79f5a9f4;
-        border-color: #3a1616;
+        background-color: #4f31f7;
         color: black;
+        border:none;
         transition: all 1.0s ease;
         transform:scale(1.5)};
    `;

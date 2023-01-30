@@ -5,21 +5,21 @@ export const sliderItems = [
       img: "https://www.pngplay.com/wp-content/uploads/9/MrBeast-Transparent-PNG.png",
       title: "Secrets",
       desc: "Secret deals for new customers.",
-      bg: "faf6f1",
+      bg: "8f8be7",
     },
     {
       id: 2,
       img: "https://cdn.pixabay.com/photo/2017/09/17/02/02/png-2757379_960_720.png",
-      title: "AUTUMN COLLECTION",
-      desc: "Mens and women's Jackets and Gloves 30% off.",
-      bg: "f1faf6",
+      title: "Seasonal",
+      desc: " 30% off all items.",
+      bg: "00FF7F",
     },
     {
       id: 3,
       img: "https://cdn.pixabay.com/photo/2019/06/18/06/05/chair-4281517_960_720.png",
-      title: "LOUNGEWEAR",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-      bg: "f6f1fa",
+      title: "Comfort",
+      desc: " 30% OFF FOR NEW ARRIVALS.",
+      bg: "8f8be7",
     },
   ];
 

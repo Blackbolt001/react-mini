@@ -6,7 +6,7 @@ import CategoryItem from "./CategoryItem";
 const Container = styled.div`
   display: flex;
   padding: 20px;
-  background-color: #faf6f1;
+  background-color:  #8f8be7;
   justify-content: space-between;
   ${mobile({ padding: "0px", flexDirection:"column" })}
 `;

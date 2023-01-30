@@ -6,7 +6,7 @@ const Container = styled.div`
 padding:20px;
 display:flex;
 flex-wrap: wrap;
-background-color: #faf6f1;
+background-color: #8f8be7;
 justify-content:space-between;
 
 `;

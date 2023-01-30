@@ -6,6 +6,7 @@ import {mobile} from "../responsive"
 
 const Container = styled.div`
     height: 60px;
+    background:url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center;
     ${mobile({ height: "50px"})};
 
 `;
@@ -13,7 +14,6 @@ const Wrapper = styled.div`
 padding:10px 20px;
 display:flex;
 align-items: center;
-background-color: #f7e8da;
 justify-content: space-between;
 ${mobile({ padding: "10px 0px"})};
 `;
