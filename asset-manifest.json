@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/react-mini/static/js/main.7731a477.js",
-    "static/media/Time Lapse Video Of Night Sky.mp4": "/react-mini/static/media/Time Lapse Video Of Night Sky.efd82aeabfe8da3126e8.mp4",
+    "main.js": "/react-mini/static/js/main.95d35dd5.js",
+    "static/media/motion-18249.mp4": "/react-mini/static/media/motion-18249.15c2874168845cea93c1.mp4",
     "index.html": "/react-mini/index.html",
-    "main.7731a477.js.map": "/react-mini/static/js/main.7731a477.js.map"
+    "main.95d35dd5.js.map": "/react-mini/static/js/main.95d35dd5.js.map"
   },
   "entrypoints": [
-    "static/js/main.7731a477.js"
+    "static/js/main.95d35dd5.js"
   ]
 }
