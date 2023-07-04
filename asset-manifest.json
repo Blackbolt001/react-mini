@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.js": "/react-mini/static/js/main.3ac30072.js",
-    "static/media/motion-18249.mp4": "/react-mini/static/media/motion-18249.15c2874168845cea93c1.mp4",
+    "main.js": "/react-mini/static/js/main.c24ffaf6.js",
     "index.html": "/react-mini/index.html",
-    "main.3ac30072.js.map": "/react-mini/static/js/main.3ac30072.js.map"
+    "main.c24ffaf6.js.map": "/react-mini/static/js/main.c24ffaf6.js.map"
   },
   "entrypoints": [
-    "static/js/main.3ac30072.js"
+    "static/js/main.c24ffaf6.js"
   ]
 }
